@@ -58,7 +58,7 @@ public class UHDHpBar : MonoBehaviour
             {
                
                 hpBar.localPosition = canvasPos + new Vector2(0, 200);
-                hpBar.GetComponent<Slider>().value = transform.parent.GetComponent<EnemyState>().BossHp / maxHp;
+                hpBar.GetComponent<Slider>().value = transform.parent.GetComponent<EnemyState>().BossHp / transform.parent.GetComponent<EnemyState>().BossMaxHp;
             }
             if(gameObject.transform.parent.CompareTag("Enemy"))
             {
@@ -79,7 +79,7 @@ public class UHDHpBar : MonoBehaviour
         hpBar.gameObject.SetActive(true);
         if (gameObject.transform.parent.name == "Boss")
         {
-           
+            Debug.Log("BOsss");
             maxHp = transform.GetComponentInParent<EnemyState>().BossHp;
         }
         if (gameObject.transform.parent.CompareTag("Enemy"))

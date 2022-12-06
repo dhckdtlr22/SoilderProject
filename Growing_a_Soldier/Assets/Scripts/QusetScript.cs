@@ -49,7 +49,7 @@ public class QusetScript : MonoBehaviour
     {
         if (kill >= QusetKill)
         {
-           total.MyCoin = QusetKill * (QusetLV + 4);
+           total.MyCoin += QusetKill * (QusetLV + 4);
             QusetLV++;
             if(QusetLV > 7)
             {
@@ -73,7 +73,7 @@ public class QusetScript : MonoBehaviour
         if (QusetClearNum >=5)
         {
             QusetClearNum -= 5;
-            total.MyCoin = 1000000;
+            total.MyCoin += 1000000;
         }
     }
     public void But3()
@@ -81,7 +81,7 @@ public class QusetScript : MonoBehaviour
         if (QusetStage >= 5)
         {
             QusetStage -= 5;
-            total.MyCoin = QusetStage * 100;
+            total.MyCoin += QusetStage * 100;
         }
     }
 }

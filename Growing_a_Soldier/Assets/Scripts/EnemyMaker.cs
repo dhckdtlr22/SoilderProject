@@ -92,6 +92,7 @@ public class EnemyMaker : MonoBehaviour
                         GameObject Boss = Enemy[100];
                         Boss.transform.position = new Vector3(transform.position.x,3.4f, transform.position.z);
                         Boss.GetComponent<EnemyState>().BossHp = (int)(100 * (totalState.Stage / 5 * 1.5f));
+                        Boss.GetComponent<EnemyState>().BossMaxHp = Boss.GetComponent<EnemyState>().BossHp;
                         Boss.GetComponent<EnemyState>().BossDamage = (int)(200 * (totalState.Stage / 5 * 1.2f));
                         Boss.GetComponent<EnemyState>().BossDropCoin = (int)(50 * (totalState.Stage / 5 * 1.5f));
                         Boss.GetComponent<EnemyState>().BossDropExp = (int)(100 * (totalState.Stage / 5 * 1.5f));

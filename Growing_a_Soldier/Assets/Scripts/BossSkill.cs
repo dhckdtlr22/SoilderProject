@@ -48,6 +48,7 @@ public class BossSkill : MonoBehaviour
                 //주기적 피회복
                 break;
             case 3:
+                //일반
                 break;
 
         }

@@ -121,6 +121,7 @@ public class EnemyState : MonoBehaviour
             if (gameObject.name == "Boss")
             {
                 attackZone.Enemy.RemoveAt(0);
+                GetComponentInChildren<UHDHpBar>().DestroyHpBar();
                 enemyMaker.KillCount++;
                 total.MyCoin += BossDropCoin;
                 total.PlayerExp += BossDropExp;
