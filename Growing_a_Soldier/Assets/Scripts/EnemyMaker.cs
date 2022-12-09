@@ -278,9 +278,4 @@ public class EnemyMaker : MonoBehaviour
 
     }
 
-    public void EnemyReset()
-    {
-
-    }
-
 }

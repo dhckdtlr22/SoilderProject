@@ -209,10 +209,6 @@ public class TotalState : MonoBehaviour
         quset.QusetStage++;
         
     }
-    public void DaybyDay()
-    {
-        
-    }
     public void JSONdate()
     {
         var PlayerState = new JSONObject();
